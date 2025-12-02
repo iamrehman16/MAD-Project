@@ -27,7 +27,7 @@ fun MemberShareEditor(
     Column(modifier = Modifier.fillMaxWidth()) {
         Text("Member Shares", style = MaterialTheme.typography.bodyMedium)
         members.forEach { member ->
-            val share = shares[member.id] ?: 0.0
+            val share = shares[member.name] ?: 0.0
             Row(
                 modifier = Modifier.fillMaxWidth().padding(vertical = 2.dp),
                 horizontalArrangement = Arrangement.SpaceBetween
